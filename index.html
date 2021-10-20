@@ -15,54 +15,63 @@
       content="Have fun in the surf this summer with local Instructor Locky. Bermagui's funnest surf lessons's."
     />
     <meta property=og:image content=https://> <meta property=og:url
-    content=https://www.bespokesurfschool.com /> <link rel=stylesheet
-    href=/assets/css/style.css> <link rel=preconnect
-    href=https://fonts.googleapis.com /> <link rel=preconnect
-    href=https://fonts.gstatic.com crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel=canonical href=https://www.bespokesurfschool.com /> <link
-    rel="shortcut icon" type=image/jpg href=.ico />
+    content=https://www.bespokesurfschool.com /> 
+    <link rel=stylesheet
+    href=/assets/css/style.css> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Oswald:wght@400;700&display=swap" rel="stylesheet" rel="preload" as="font">  
+    <link rel=canonical href=https://www.bespokesurfschool.com /> 
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
     <!-- Favicon -->
-    <link rel="stylesheet" href="" />
-
-    <!-- Swiper Scripts -->
-    <link rel=stylesheet href=/css/swiper-bundle.min.css /> <link rel=stylesheet
-    href=/assets/css/-debug.css>
+    <link rel="shortcut icon" type="image/ico" href="/assets/images/logo-white.ico"/>
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
   </head>
-
   <body>
+
+      <!-- Header -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Bespoke Surf School</a>
+        <a href="#home"><img src="assets/images/logo-white.png" alt="logo" class="bespoke-logo"></a>
+        <a href="#home" class="nav__logo">Bespoke Surf School</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+              <a href="#about" class="nav__link active-link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#discover" class="nav__link">Discover</a>
+              <a href="#discover" class="nav__link active-link">Discover</a>
             </li>
             <li class="nav__item">
-              <a href="#Beaches" class="nav__link">Beaches</a>
+              <a href="#beaches" class="nav__link ">Prices</a>
+            </li>
+            <li class="nav__item">
+              <a href="/lessons.html" class="nav__link">Lessons</a>
+            </li>
+            <li class="nav__item">
+              <a href="/about.html" class="nav__link">Qualifications</a>
             </li>
           </ul>
+
+          <div class="nav__dark">
+            <!-- Theme change button -->
+            <span class="change-theme-name">Dark Mode</span>
+            <i class="ri-moon-fill change-theme-color" id="theme-button"></i>
+          </div>
 
           <i class="ri-close-line nav__close" id="nav-close"></i>
         </div>
 
         <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-function-line"></i>
+          <i class="ri-menu-unfold-line"></i>
         </div>
       </nav>
     </header>
@@ -71,40 +80,37 @@
       <!-- Home -->
       <section class="home" id="home">
         <img
-          src="/assets/images/surfer.jpeg"
+          src="/assets/images/surfers-ocean.webp"
           alt="Background Image Surfing"
-          class="home__img"
+          class="home__img" id="home__img"
         />
         <div class="home__container container grid">
           <div class="home__data">
-            <span class="home__data-subtitle"> Have fun. </span>
+            <span class="home__data-subtitle"> </span>
             <h1 class="home__data-title">
               Learn to Surf<br />
               While <strong>Enjoying</strong><br /><strong>Bermagui</strong
               ><br />
             </h1>
-            <a href="#" class="button">Book</a>
+            <a href="#" class="button">Book via Facebook.</a>
           </div>
           <div class="home__social">
-            <a href="#" target="_blank" class="home__social-link"
+            <a rel="noopener" href="https://www.facebook.com/Bespoke-Surf-School-109613604784679" target="_blank" class="home__social-link"
               ><i class="ri-facebook-fill"></i
             ></a>
             <a href="#" target="_blank" class="home__social-link"></a>
             <a href="#" target="_blank" class="home__social-link"></a>
           </div>
           <div class="home__info">
-            <div>
-              <span class="home__info-title">5 lessons we teach you.</span>
-              <a
-                href="#"
-                class="button button__flex button__link home__info-button"
-                >More
-                <i class="ri-arrow-right-line"></i>
-              </a>
+           <div><a href="/lessons.html"
+            class="button button__flex button__link home__info-button"  > 
+              <span class="home__info-title">5 lessons we teach you.</span>    </a>
+              <a href="/lessons.html" class="button button__flex button__link home__info-button">More
+                <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="home__info-overlay">
               <img
-                src="/assets/images/surfing-standup.jpeg"
+                src="/assets/images/surfing-standup.webp"
                 alt=""
                 class="home__info-img"
               />
@@ -114,56 +120,261 @@
       </section>
 
       <!-- About -->
-
-      <section class="section about section" id="about">
+      <section class="about section" id="about">
         <div class="about__container container grid">
           <div class="about__data">
             <h2 class="section__title about__title">
-              More Information <br />
-              About Our Beaches
+              Lochy <br />
+              Your Experienced <br>Surf Coach
             </h2>
             <p class="about__description">
               We guarantee the funnest surf lessons on the south coast at the
               most competitive prices. Your stoke level will be at an all time
               high!
             </p>
-            <a href="#" class="button">View session times</a>
+            <a href="/about.html" class="button about-btn">About Us</a>
           </div>
 
           <div class="about__img">
             <div class="about__img-overlay">
               <img
-                src="/assets/images/girl-board.jpeg"
+                src="/assets/images/locky-solo.webp"
                 alt=""
                 class="about__img-one"
               />
             </div>
             <div class="about__img-overlay">
               <img
-                src="/assets/images/surf-guy.jpeg"
+                src="/assets/images/guy-paddle.webp"
                 alt=""
-                class="about__img-one"
+                class="about__img-two"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Discover -->
-      <section class="discover section" id="discover"></section>
+  <!-- Discover -->
+  <section class="discover section" id="discover">
+    <h2 class="section__title">
+      We provide all the surf gear. <br> You dont need to bring anything.
+    </h2>
+    <div class="discover__container container swiper-container">
+      <div class="swiper-wrapper">
+          <!-- Discover 1-->
+          <div class="discover__card swiper-slide">
+            <img src="/assets/images/girl-longboard-vert.webp" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Boards</h2>
+              <span class="discover__description">We have a range of boards from large foam beginner boards to shortboards made from fibreglass.</span>
+            </div>
+          </div>
+            <!-- Discover 2-->
+          <div class="discover__card swiper-slide">
+            <img src="/assets/images/solo-guy-vert.webp" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Wetsuits</h2>
+              <span class="discover__description">We have a range of wetsuits in many sizes.</span>
+            </div>
+          </div>
+            <!-- Discover 3-->
+          <div class="discover__card swiper-slide">
+            <img src="/assets/images/beach-training.webp" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Trainer</h2>
+              <span class="discover__description">Lochy is a seasoned surf trainer who is also a qualified coach.</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
 
       <!-- Experience -->
-      <section class="experience section"></section>
+      <section class="experience section">
+        <h2 class="section__title">Experience as a qualified <br> Surf Coach & Personal Trainer.</h2>
+        <div class="experience__container container grid">
+          <div class="experience__content grid">
+            <div class="experience__data">
+              <h2 class="experience__number">
+                03
+              </h2>
+              <span class="experience__decription">
+                Years <br> Experience
+              </span>
+            </div>
+            <div class="experience__data">
+              <h2 class="experience__number">
+                500
+              </h2>
+              <span class="experience__decription">
+                Lessons <br> taught
+              </span>
+            </div>
+            <div class="experience__data">
+              <h2 class="experience__number">
+                04
+              </h2>
+              <span class="experience__decription">
+                Different <br> Countries
+              </span>
+            </div>
+          </div>
+
+          <div class="experience__img grid">
+            <div class="experience__overlay">
+              <img src="/assets/images/surf-wave-lochy.webp" width="400px" alt="lochy surfing" class="experience__img-one">
+            </div>
+            <div class="experience__overlay">
+              <img src="/assets/images/lochy-overseas.webp" width="400px" alt="lochy surfing" class="experience__img-two">
+            </div>
+          </div>
+        </div>
+      </section>
+
+ <!-- Video -->
+<section class="video section" id="video">
+  <h2 class="section__title">Stand up on your first wave.</h2>
+  <div class="video__container container">
+    <p class="video__description">Learn to surf with us.</p>
+    <div class="video__content">
+        <iframe width="300" src="https://www.youtube.com/embed/c6yOxWf3A6g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <!-- <button class="button button--flex video__button" id="video-button">
+        <i class="ri-play-fill video__button-icon" id="video-icon"></i>
+      </button>  
+    </div>
+  </video__container>--> 
+</div>
+</div>
+</section>
+
+ <!-- Beaches -->
+<section class="place section" id="beaches">
+  <h2 class="section__title">Lesson Prices</h2>
+  <div class="place__container container grid">
+<!-- Prices Card 1-->
+<div class="place__card">
+  <img src="/assets/images/single.png" alt="" class="place__img">
+  <div class="place__content">
+    <span class="place__rating">
+      <i class="ri-sun-foggy-fill place__rating"></i>
+    </span>
+    <div class="place__data">
+      <h3 class="place__title">Single</h3>
+      <span class="place__subtitle">Lessons</span>
+      <span class="place__price">$100 = 1.5hrs</span>
+    </div>
+  </div>
+  <a rel="noopener" href="https://www.facebook.com/Bespoke-Surf-School-109613604784679" target="_blank">
+  <button class="button button--flex place__button">
+    <i class="ri-arrow-right-line"></i>
+  </button>
+  </a>
+</div>
+<!-- Prices Card 2-->
+<div class="place__card">
+  <img src="/assets/images/double.png" alt="" class="place__img">
+  <div class="place__content">
+    <span class="place__rating">
+      <i class="ri-sun-foggy-fill place__rating"></i>
+    </span>
+    <div class="place__data">
+      <h3 class="place__title">Double</h3>
+      <span class="place__subtitle">Lessons</span>
+      <span class="place__price">$180 = 1.5hrs</span>
+    </div>
+  </div>
+  <a rel="noopener" href="https://www.facebook.com/Bespoke-Surf-School-109613604784679" target="_blank">
+    <button class="button button--flex place__button">
+      <i class="ri-arrow-right-line"></i>
+    </button>
+    </a>
+</div>
+<!-- Prices Card 3-->
+<div class="place__card">
+  <img src="/assets/images/group.png" alt="" class="place__img">
+  <div class="place__content">
+    <span class="place__rating">
+      <i class="ri-sun-foggy-fill  place__rating"></i>
+    </span>
+    <div class="place__data">
+      <h3 class="place__title">4 or more</h3>
+      <span class="place__subtitle">Lessons</span>
+      <span class="place__price">Contact</span>
+    </div>
+  </div>
+  <a rel="noopener" href="https://www.facebook.com/Bespoke-Surf-School-109613604784679" target="_blank">
+    <button class="button button--flex place__button">
+      <i class="ri-arrow-right-line"></i>
+    </button>
+    </a>
+</div>
+  </div>
+</section>
     </main>
 
     <!-- Footer -->
-
+    <footer>
+<div class="footer section">
+  <div class="footer__container container grid">
+    <div class="footer__content grid">
+    <div class="footer__data">
+      <h3 class="footer__title">Surf</h3>
+      <p class="footer__description">No matter your level <br>we offer top quality<br>lessons.</p>
+      <div>
+        <a rel="noreferrer" href="https://www.facebook.com/Bespoke-Surf-School-109613604784679" target="_blank" class="footer__social">
+          <i class="ri-facebook-fill"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer__data">
+      <h3 class="footer__subtitle">
+        About
+      </h3>
+      <ul>
+        <li class="footer__item">
+          <a href="/about.html" class="footer__link">About Us</a>
+        </li>
+        <li class="footer__item">
+          <a href="/lessons.html" class="footer__link">Lessons</a>
+        </li>
+        <li class="footer__item">
+          <a href="/index.html#beaches" class="footer__link">Prices</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__data">
+      <h3 class="footer__subtitle">
+        Support
+      </h3>
+      <ul>
+        <li class="footer__item">
+          <a href="/faq-page.html" class="footer__link">FAQ</a>
+        </li>
+        <li class="footer__item">
+          <a rel="noopener" href="https://www.facebook.com/Bespoke-Surf-School-109613604784679" target="_blank" class="footer__link">Contact</a>
+        </li>
+        <li class="footer__item">
+          <a href="/faq-page.html" class="footer__link">T&C</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="footer__rights">
+  <a target="_blank" href="https://surfaid.org/"><img src="/assets/images/surfaid.png" rel="noreferrer" alt="surfaid" class="charity"/></a>
+  <p class="footer__copy">&#169; 2021 Bespoke Surf School. All rights reserved. </p>
+  <div class="footer__terms">
+    <a href="https://www.rosshardingham.com/" target="_blank" class="footer__terms-link">Code by Ross Hardingham</a>
+  </div>
+</div>
+</div>
+</div>
+</footer>
     <!-- Scroll Up -->
-
-    <!-- Scroll Reveal  -->
-
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="ri-arrow-up-line scrollup-icon"></i>
+</a>
     <!-- Swiper JS   -->
-
+    <script src="/assets/JS/swiper-bundle.min.js"></script>
     <!-- Main JS  -->
     <script src="/assets/JS/main.js"></script>
   </body>
